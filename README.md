@@ -12,7 +12,7 @@ In the GQRX main GUI, several things must be configured:
 
 In the Input Controls tab:
 Ensure the DC Remove checkbox is checked.
-Adjust RF, IF and BB gains according to your needs. Common values that usually work on HackRF, depending on the noise around the antenna and the strength of the satellite signal are shown below. However, playing around with these values to find the optimal combination of gains is recommended.
+Adjust RF, IF and BB gains according to your needs. Common values that usually work on RTL-SDR, depending on the noise around the antenna and the strength of the satellite signal are shown below. However, playing around with these values to find the optimal combination of gains is recommended.
 * RF: 0 dB, IF: 16 dB, BB: 20 to 32 dB
 * RF: 0 dB, IF: 24 dB, BB: 20 to 24 dB
 * RF: 14 dB, IF: 16 dB, BB: 20 to 24 dB
@@ -40,7 +40,8 @@ Once you downloaded and installed the Gqrx Software defined radio, you can use R
 ![Gqrx](https://user-images.githubusercontent.com/83551940/116836226-b0390080-ab93-11eb-80d4-908a5054ef94.png)
 
 ## How to decode the  Burkina-Sat1 Becon data
-Please clone the [gr-satellites](https://github.com/daniestevez/gr-satellites) project providing a decoder to decode the data that received from Gqrx 
+Please clone the [gr-satellites](https://github.com/daniestevez/gr-satellites) project providing a decoder to decode the data that received from Gqrx .
+
 gr-satellites is a GNU Radio out-of-tree module encompassing a collection of telemetry decoders that supports many different Amateur satellites. This open-source project started in 2015 with the goal of providing telemetry decoders for all the satellites that transmit on the Amateur radio bands.
 
 It supports most popular protocols, such as AX.25, the GOMspace NanoCom U482C and AX100 modems, an important part of the CCSDS stack, the AO-40 protocol used in the FUNcube satellites, and several ad-hoc protocols used in other satellites.
