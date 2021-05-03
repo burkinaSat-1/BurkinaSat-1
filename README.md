@@ -15,3 +15,6 @@ Beacons are encapsulated in AX.25 + HDLC frames, with G3RUH scrambling and NRZI 
 ![beacon_structure](https://user-images.githubusercontent.com/83551940/116835536-f6409500-ab90-11eb-9ead-a20ec87e9f4c.png)
 
 
+## Downlink Decoder and Parser
+Once you downloaded and installed the Gqrx Software defined radio, you can use RTL-SDR dongle to attach your your ground station UHF antenna or use  the anntena provided by RTL-SDR. Attach your Gqrx to your RTL-SDR  by selecting USB as connexion port 
+
