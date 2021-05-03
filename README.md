@@ -40,4 +40,9 @@ Once you downloaded and installed the Gqrx Software defined radio, you can use R
 ![Gqrx](https://user-images.githubusercontent.com/83551940/116836226-b0390080-ab93-11eb-80d4-908a5054ef94.png)
 
 ## How to decode the  Burkina-Sat1 Becon data
-gr-satellites was used in this project to develop an AX.25 + HDLC decoder for data at 4800 bps. The flowgraph in apps/ax25_decode.grc can be opened via gnuradio-companion. If you installed GNURadio with PyBOMBS into a prefix (as shown in section 4), you can also run the decoder directly by executing:
+Please clone the [gr-satellites](https://github.com/daniestevez/gr-satellites) project providing a decoder to decode the data that received from Gqrx 
+gr-satellites is a GNU Radio out-of-tree module encompassing a collection of telemetry decoders that supports many different Amateur satellites. This open-source project started in 2015 with the goal of providing telemetry decoders for all the satellites that transmit on the Amateur radio bands.
+
+It supports most popular protocols, such as AX.25, the GOMspace NanoCom U482C and AX100 modems, an important part of the CCSDS stack, the AO-40 protocol used in the FUNcube satellites, and several ad-hoc protocols used in other satellites.
+ 
+ you can also run the decoder directly by executing:
