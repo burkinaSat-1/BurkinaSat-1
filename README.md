@@ -13,10 +13,10 @@ In the GQRX main GUI, several things must be configured:
 In the Input Controls tab:
 Ensure the DC Remove checkbox is checked.
 Adjust RF, IF and BB gains according to your needs. Common values that usually work on HackRF, depending on the noise around the antenna and the strength of the satellite signal are shown below. However, playing around with these values to find the optimal combination of gains is recommended.
-RF: 0 dB, IF: 16 dB, BB: 20 to 32 dB
-RF: 0 dB, IF: 24 dB, BB: 20 to 24 dB
-RF: 14 dB, IF: 16 dB, BB: 20 to 24 dB
-RF: 14 dB, IF: 8 dB, BB: 20 to 32 dB
+* RF: 0 dB, IF: 16 dB, BB: 20 to 32 dB
+* RF: 0 dB, IF: 24 dB, BB: 20 to 24 dB
+* RF: 14 dB, IF: 16 dB, BB: 20 to 24 dB
+* RF: 14 dB, IF: 8 dB, BB: 20 to 32 dB
 In the Receiver Options tab:
 The satellite sends GMSK-modulated data. To demodulate such satellite signals, select Narrow FM as the demodulation mode.
 The filter width can be left to Normal, as this usually gives enough bandwidth for the 4800 bps frames from Quetzal-1.
@@ -48,17 +48,17 @@ It supports most popular protocols, such as AX.25, the GOMspace NanoCom U482C an
  Once you cloned the gr-satellites project and followed the instruction for installation, you an run the decoder using the command line as follow:
  $ gr_satellites
 usage: gr_satellites satellite [-h] [--version] [--list_satellites]
-                            [--ignore_unknown_args]
-                            (--wavfile WAVFILE | --rawfile RAWFILE | --rawint16 RAWINT16 | --audio [DEVICE] | --udp | --kiss_in KISS_IN)
-                            [--samp_rate SAMP_RATE] [--udp_ip UDP_IP]
-                            [--udp_port UDP_PORT] [--iq] [--udp_raw]
-                            [--input_gain INPUT_GAIN]
-                            [--start_time START_TIME] [--throttle]
-                            [--kiss_out KISS_OUT] [--kiss_append]
-                            [--kiss_server [PORT]]
-                            [--kiss_server_address KISS_SERVER_ADDRESS]
-                            [--zmq_pub [ADDRESS]] [--hexdump]
-                            [--dump_path DUMP_PATH]
+                          *    [--ignore_unknown_args]
+                          *   (--wavfile WAVFILE | --rawfile RAWFILE | --rawint16 RAWINT16 | --audio [DEVICE] | --udp | --kiss_in KISS_IN)
+                          *   [--samp_rate SAMP_RATE] [--udp_ip UDP_IP]
+                          *   [--udp_port UDP_PORT] [--iq] [--udp_raw]
+                          *  [--input_gain INPUT_GAIN]
+                          *   [--start_time START_TIME] [--throttle]
+                          *   [--kiss_out KISS_OUT] [--kiss_append]
+                          *   [--kiss_server [PORT]]
+                          *   [--kiss_server_address KISS_SERVER_ADDRESS]
+                          *   [--zmq_pub [ADDRESS]] [--hexdump]
+                          *  [--dump_path DUMP_PATH]
                             
    Next step you should provide the recording wav  file you got from the SDR recording the becon Telemetry : below you have the all process :
    
