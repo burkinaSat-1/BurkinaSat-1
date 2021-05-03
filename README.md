@@ -61,4 +61,4 @@ usage: gr_satellites satellite [-h] [--version] [--list_satellites]
                                [--dump_path DUMP_PATH]
                             
    Next step you should provide the recording wav  file you got from the SDR recording the becon Telemetry : below you have the all process :
-   
+   ![decoded_data](https://user-images.githubusercontent.com/83551940/116929584-a1eaf300-ac2c-11eb-9094-ed69116b0f24.png)
