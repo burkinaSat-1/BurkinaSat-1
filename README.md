@@ -45,4 +45,20 @@ gr-satellites is a GNU Radio out-of-tree module encompassing a collection of tel
 
 It supports most popular protocols, such as AX.25, the GOMspace NanoCom U482C and AX100 modems, an important part of the CCSDS stack, the AO-40 protocol used in the FUNcube satellites, and several ad-hoc protocols used in other satellites.
  
- you can also run the decoder directly by executing:
+ Once you cloned the gr-satellites project and followed the instruction for installation, you an run the decoder using the command line as follow:
+ $ gr_satellites
+usage: gr_satellites satellite [-h] [--version] [--list_satellites]
+                            [--ignore_unknown_args]
+                            (--wavfile WAVFILE | --rawfile RAWFILE | --rawint16 RAWINT16 | --audio [DEVICE] | --udp | --kiss_in KISS_IN)
+                            [--samp_rate SAMP_RATE] [--udp_ip UDP_IP]
+                            [--udp_port UDP_PORT] [--iq] [--udp_raw]
+                            [--input_gain INPUT_GAIN]
+                            [--start_time START_TIME] [--throttle]
+                            [--kiss_out KISS_OUT] [--kiss_append]
+                            [--kiss_server [PORT]]
+                            [--kiss_server_address KISS_SERVER_ADDRESS]
+                            [--zmq_pub [ADDRESS]] [--hexdump]
+                            [--dump_path DUMP_PATH]
+                            
+   Next step you should provide the recording wav  file you got from the SDR recording the becon Telemetry : below you have the all process :
+   
