@@ -3,6 +3,8 @@
 BurkinaSat-1 project is an initiative of Universtity Nobert Zongo project in Burkina Faso West African Country.
 The satellite is transmitting becon data via UHF band at  435 Mhz frequency
 
+![Burkina-Sat1](https://user-images.githubusercontent.com/83551940/116931548-1e7ed100-ac2f-11eb-8395-4f9a4e437e68.png)
+
 ## Becon Telemetry
 amateur radio can get the burkina-sat1 Becon Telemetry by using process below.
 - Use SDR  radio at frequency UHF 437.X Mhz (Note the X value will be provide by IARU after validation)
